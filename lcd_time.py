@@ -3,6 +3,8 @@ import socket
 
 from time import *
 from datetime import datetime
+from subprocess import *
+
 
 lcd = lcddriver.lcd()
 cmd = "ip addr show wlan0 | grep inet | awk '{print $2}' | cut -d/ -f1"
